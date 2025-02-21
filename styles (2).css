@@ -1,0 +1,95 @@
+body {
+    font-family: 'Safira March', sans-serif;
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.responsibilities {
+    margin-bottom: 20px;
+}
+
+.responsibilities h2 {
+    margin-top: 0;
+}
+
+.responsibilities ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.responsibilities ul li {
+    background-color: #f0f0f0;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.task {
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.task.completed {
+    background-color: #f0f0f0;
+}
+
+.task h3 {
+    margin: 0;
+}
+
+.task p {
+    margin: 5px 0;
+}
+
+.task button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.task button.completed {
+    background-color: #ccc;
+}
+
+.comment-section {
+    margin-top: 10px;
+}
+
+.comment-section textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.comment-section button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.comment {
+    background-color: #f9f9f9;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 3px;
+}
