@@ -15,16 +15,16 @@ let currentWeek = 0;
 
 function rotateTasks() {
     currentWeek++;
-    const rotation = currentWeek % 4;
+    const rotation = currentWeek % 3;
     tasks.forEach(task => {
-        if (rotation === 0) {
-            task.assignedTo = ["ReEnable", "Bandile", "Tally", "Yale"][Math.floor(Math.random() * 4)];
-        } else if (rotation === 1) {
-            task.assignedTo = ["Bandile", "Tally", "Yale", "ReEnable"][Math.floor(Math.random() * 4)];
-        } else if (rotation === 2) {
-            task.assignedTo = ["Tally", "Yale", "ReEnable", "Bandile"][Math.floor(Math.random() * 4)];
-        } else {
-            task.assignedTo = ["Yale", "ReEnable", "Bandile", "Tally"][Math.floor(Math.random() * 4)];
+        if (task.assignedTo !== "Yale") {
+            if (rotation === 0) {
+                task.assignedTo = ["ReEnable", "Bandile", "Tally"][Math.floor(Math.random() * 3)];
+            } else if (rotation === 1) {
+                task.assignedTo = ["Bandile", "Tally", "ReEnable"][Math.floor(Math.random() * 3)];
+            } else {
+                task.assignedTo = ["Tally", "ReEnable", "Bandile"][Math.floor(Math.random() * 3)];
+            }
         }
     });
     renderTasks();
